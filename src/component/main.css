@@ -1,0 +1,70 @@
+.container{
+  display: flex;
+  flex-direction: column;
+
+  
+  text-align: left;
+}
+
+.header{
+  font-size: 40px;
+  font-weight: 400;
+  margin: 40px;
+
+  margin-left: 5%;
+}
+
+.input{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 50%;
+
+  margin-left: 5%;
+}
+
+.input_label{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.input input{
+  margin: 10px;
+  width: 450px;
+  height: 30px;
+
+  border-radius: 10px;
+
+
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.input button{
+  border: 1px solid;
+  border-radius: 10px;
+
+  height: 30px;
+  width: 60px;
+
+  font-size: 15px;
+  font-weight: 400;
+
+  cursor: pointer;
+}
+
+.lock_number{
+  margin: 50px;
+
+  font-size: 30px;
+  font-weight: 700;
+
+  margin-left: 5%;
+}
+
+.tx_table{
+  margin-left: 5%;
+  font-size: 15px;
+}
