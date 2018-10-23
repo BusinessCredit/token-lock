@@ -38,7 +38,7 @@ class Main extends Component {
       return this.state.queryResult.map(
         result => result.value / 10 ** 18
       ).reduce(
-        (a, b) => a + b
+        (a, b) => a + b, 0
       )
   }
 
@@ -62,7 +62,7 @@ class Main extends Component {
         </div>
 
         <div className="lock_number">
-          未来收益 : {0}
+          未来收益 : 敬请期待
         </div>
         <div className="tx_table">
           

@@ -16,8 +16,8 @@ export default function fetch_bcac_lock(address, callback) {
     res => res.json()
   ).then(
     json => {
-      //const result = parse_bcac_tx(json, address)
-      callback(json.result)
+      const result = parse_bcac_tx(json, address)
+      callback(result)
     }
   ).catch(
     error => {
@@ -29,7 +29,9 @@ export default function fetch_bcac_lock(address, callback) {
 
 function parse_bcac_tx(jsonResponse, address) {
   return jsonResponse.result.filter(
-    (result) => result.to === address
+    (result) => 
+      result.from === address.toLowerCase() && 
+      result.to === "0xC77d060a64E832Fdc81285292a7886ED418Df868".toLowerCase()
   )
 }
 
